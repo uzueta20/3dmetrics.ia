@@ -2,78 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3DMetrics - Develop and Deliver with Discipline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3DMetrics | Develop and Deliver with Discipline</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="hero">
-  <nav class="nav">
-    <div class="logo">
-      <img src="logo.svg" alt="3DMetrics Logo" />
-    </div>
-    <ul class="nav-links">
-      <li><a href="#problem">Problem</a></li>
-      <li><a href="#solution">Solution</a></li>
-      <li><a href="#ai">AI Insights</a></li>
-      <li><a href="#dashboards">Dashboards</a></li>
-      <li><a href="#how">How It Works</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="menu-toggle">☰</button>
-  </nav>
-
-  <div class="hero-content reveal">
-    <h1>Develop and Deliver with Discipline</h1>
-    <p>Understand your system. Improve your system.</p>
-    <a href="#contact" class="btn">Request a Demo</a>
+<header class="navbar">
+  <div class="container nav-content">
+    <img src="images/logo.svg" alt="3DMetrics Logo" class="logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#ai">AI Insights</a></li>
+        <li><a href="#dashboards">Dashboards</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#contact" class="btn-nav">Request Demo</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </nav>
   </div>
 </header>
 
-<section id="problem" class="section white-bg reveal">
-  <h2>The Problem</h2>
-  <div class="problem-stats">
-    <div><strong>30%</strong><p>Rework due to lack of visibility</p></div>
-    <div><strong>40%</strong><p>Projects fail without metrics</p></div>
-    <div><strong>$100K–$1M</strong><p>Lost annually per team</p></div>
+<section class="hero">
+  <div class="container hero-content reveal">
+    <h1>Develop and Deliver with Discipline</h1>
+    <p>Understand your system. Improve your system. Predict your future.</p>
+    <a href="#contact" class="btn">Request a Demo</a>
+  </div>
+</section>
+
+<section id="problem" class="section light-bg reveal">
+  <div class="container">
+    <h2>The Problem</h2>
+    <div class="cards">
+      <div class="card">
+        <strong>30%</strong>
+        <p>Rework due to lack of visibility</p>
+      </div>
+      <div class="card">
+        <strong>40%</strong>
+        <p>Projects fail without metrics</p>
+      </div>
+      <div class="card">
+        <strong>$100K–$1M</strong>
+        <p>Lost annually per team</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="solution" class="section dark-bg reveal">
-  <h2>Our Solution</h2>
-  <p>Operational Discipline Measurement, Reliable Data Core, Predictive AI for software teams.</p>
+  <div class="container">
+    <h2>Our Solution</h2>
+    <p class="section-desc">
+      Operational Discipline Measurement, Reliable Data Core, Predictive AI — all in one platform.
+    </p>
+  </div>
 </section>
 
-<section id="ai" class="section white-bg reveal">
-  <h2>AI Insights</h2>
-  <p>Correlate discipline with business value. Detect risk patterns and forecast delivery outcomes automatically.</p>
+<section id="ai" class="section light-bg reveal">
+  <div class="container">
+    <h2>AI Insights</h2>
+    <p class="section-desc">
+      Correlate discipline with business outcomes. Detect risk early. Forecast deliveries intelligently.
+    </p>
+  </div>
 </section>
 
 <section id="dashboards" class="section dark-bg reveal">
-  <h2>Dashboards & Metrics</h2>
-  <p>Installed metrics include DORA Metrics, Delivery Quality, Sprint Completion Rate, and more.</p>
+  <div class="container">
+    <h2>Dashboards & Metrics</h2>
+    <p class="section-desc">
+      Visualize DORA Metrics, Sprint Completion, Delivery Quality and more — all automatically.
+    </p>
+  </div>
 </section>
 
-<section id="how" class="section white-bg reveal">
-  <h2>How It Works</h2>
-  <ol class="how-list">
-    <li>Discovery Phase</li>
-    <li>Data Warehouse and Connectors Setup</li>
-    <li>Dashboard Deployment</li>
-    <li>Training and Coaching</li>
-    <li>Continuous Insight Delivery</li>
-  </ol>
+<section id="how" class="section light-bg reveal">
+  <div class="container">
+    <h2>How It Works</h2>
+    <ul class="steps">
+      <li>Discovery Phase</li>
+      <li>Data Warehouse & Connectors Setup</li>
+      <li>Dashboard Deployment</li>
+      <li>Training and Coaching</li>
+      <li>Continuous Insight Delivery</li>
+    </ul>
+  </div>
 </section>
 
-<section id="contact" class="section dark-bg reveal">
-  <h2>Contact Us</h2>
-  <p>Email us at <a href="mailto:contact@3dmetrics.io">contact@3dmetrics.io</a> to schedule a demo.</p>
+<section id="contact" class="section contact-bg reveal">
+  <div class="container contact-content">
+    <h2>Contact Us</h2>
+    <p>Email us at <a href="mailto:contact@3dmetrics.io">contact@3dmetrics.io</a> to schedule a live demo.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
 </section>
 
 <footer class="footer dark-bg">
-  <p>© 2025 3DMetrics. All rights reserved.</p>
+  <div class="container">
+    <p>© 2025 3DMetrics. All rights reserved.</p>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>
