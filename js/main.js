@@ -1,10 +1,10 @@
-// Mobile menu toggle
+// Menu Toggle
 document.querySelector('.menu-toggle').addEventListener('click', () => {
   const nav = document.querySelector('.nav-links');
   nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
 });
 
-// Basic fade-in animation
+// Animations on load
 window.addEventListener('DOMContentLoaded', () => {
   const elements = document.querySelectorAll('.section, .hero-content');
   elements.forEach((el, i) => {
