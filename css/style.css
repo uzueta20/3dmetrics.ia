@@ -1,0 +1,65 @@
+/* Base */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family:'Inter',sans-serif; background:#0f1829; color:#fff; scroll-behavior:smooth; }
+a { color:#269dff; text-decoration:none; }
+.section { padding:6rem 2rem; max-width:1100px; margin:0 auto; text-align:center; }
+.section.dark { background:#131d33; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0f1829, #131d33);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-content h1 { font-size: 4rem; margin-bottom: 1rem; }
+.hero-content p { font-size: 1.5rem; margin-bottom: 2rem; }
+.btn {
+  background: #0066ff;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover { background: #0052cc; }
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  z-index:1000;
+}
+.logo { font-weight: bold; font-size:1.5rem; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.menu-toggle { display: none; }
+
+/* Problem */
+.problem-stats { display:flex; flex-wrap:wrap; gap:2rem; justify-content:center; margin-top:2rem; }
+.problem-stats div { flex:1; min-width:200px; background:#1c2b4a; padding:2rem; border-radius:12px; }
+
+/* Features */
+.features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:2rem; margin-top:2rem; }
+.features-grid div { background:#1c2b4a; padding:2rem; border-radius:12px; }
+
+/* How It Works */
+.how-list { text-align:left; list-style:decimal inside; max-width:600px; margin:2rem auto 0; }
+
+/* Footer */
+.footer { text-align:center; padding:2rem; background:#0f1829; font-size:0.9rem; color:#aaa; }
+
+/* Responsive */
+@media(max-width:768px){
+  .nav-links { display:none; }
+  .menu-toggle { display:block; background:none; border:none; font-size:2rem; color:#fff; }
+}
